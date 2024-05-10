@@ -1,0 +1,118 @@
+{
+    "steps": [
+        {
+            "title": "Step 1",
+            "id": "step1",
+            "fields": [
+                {
+                    "id": "name",
+                    "type": "text",
+                    "label": "Name",
+                    "name": "name",
+                    "defaultValue": "",
+                    "placeholder": "Enter your name",
+                    "validation": {
+                        "required": true,
+                        "minLength": 20
+                    }
+                },
+                {
+                    "id": "email",
+                    "type": "email",
+                    "label": "Email",
+                    "name": "email",
+                    "defaultValue": "",
+                    "placeholder": "Enter your email",
+                    "validation": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": "tel",
+                    "type": "tel",
+                    "label": "Phone",
+                    "name": "tel",
+                    "defaultValue": "",
+                    "placeholder": "Enter your phone number",
+                    "validation": {
+                        "required": true,
+                        "maxLength": 14
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Step 2",
+            "id": "step2",
+            "fields": [
+                {
+                    "id": "service",
+                    "type": "select",
+                    "label": "Choose a service",
+                    "name": "service",
+                    "options": [
+                        {
+                            "value": "design",
+                            "label": "Design"
+                        },
+                        {
+                            "value": "development",
+                            "label": "Development"
+                        },
+                        {
+                            "value": "consulting",
+                            "label": "Consulting"
+                        }
+                    ],
+                    "defaultValue": "design",
+                    "placeholder": "Select a service",
+                    "validation": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": "file",
+                    "type": "file",
+                    "label": "Upload a file",
+                    "name": "file",
+                    "placeholder": "Choose a file",
+                    "validation": {
+                        "required": true
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Step 3",
+            "id": "step3",
+            "fields": [
+                {
+                    "id": "date",
+                    "type": "date",
+                    "label": "Start date",
+                    "name": "startDate",
+                    "defaultValue": "",
+                    "placeholder": "Choose a date",
+                    "validation": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": "textarea",
+                    "type": "textarea",
+                    "label": "Describe your project",
+                    "name": "projectDescription",
+                    "defaultValue": "",
+                    "placeholder": "Describe your project",
+                    "validation": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ],
+    "thankyou": {
+        "title": "Thank you for your submission!",
+        "message": "We will get in touch with you shortly."
+    }
+}
